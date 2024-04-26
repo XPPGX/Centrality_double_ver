@@ -1,0 +1,495 @@
+datasetPath = ../../dataset/karate.txt
+Success : Build AdjList
+==============================
+dataset = ../../dataset/karate.txt
+nodeNum = 34
+edgeNum = 78
+degreeOneNum = 1
+graph start with 1
+==============================
+==============================
+CreateCSR...
+csr->csrVSize = 36
+csr->csrESize = 156
+csr->degreeOneNum = 1
+csr->startAtZero = 0
+csr->maxDegree = 17
+[Success] CreateCSR finish
+==============================
+CCs[2] = 68
+==============================
+D1 Folding...Finished.
+D1 node count       (|D1|)              =        1
+Hub node Count      (|Hub|)             =        1
+Ordinary node Count (|V| - |D1|)        =       33
+==============================
+[Execution Time] D1Folding          = 0.000002
+[Execution Time] AP_detection       = 0.000003
+==============================
+AP Copy and Split... Finished.
+apCount         =        1
+compCount       =        2
+maxCompSize     =       27
+endNodeID       =       36
+==============================
+[Execution Time] AP_Copy_And_Split  = 0.000005
+apCount     =        1
+compCount   =        2
+maxCompSize =       27
+endNodeID   =       36
+
+
+rebuild Graph...
+
+[Pass 1] degree = 0
+comp_offset[0] = 0, compID[0] = 0
+	newID 0, oldID 2, compID 0: 
+		_csr->orderedCsrE[0] = 22
+		_csr->orderedCsrE[1] = 18
+		_csr->orderedCsrE[2] = 20
+		_csr->orderedCsrE[3] = 8
+		_csr->orderedCsrE[4] = 31
+		_csr->orderedCsrE[5] = 14
+		_csr->orderedCsrE[6] = 4
+		_csr->orderedCsrE[7] = 3
+		_csr->orderedCsrE[8] = 35
+		newCsrE_Offset_count = 9
+	newID 1, oldID 22, compID 0: 	newCsrE_Offset_count = 11
+		_csr->orderedCsrE[9] = 2
+		_csr->orderedCsrE[10] = 35
+	newID 2, oldID 18, compID 0: 	newCsrE_Offset_count = 13
+		_csr->orderedCsrE[11] = 2
+		_csr->orderedCsrE[12] = 35
+	newID 3, oldID 20, compID 0: 	newCsrE_Offset_count = 16
+		_csr->orderedCsrE[13] = 2
+		_csr->orderedCsrE[14] = 35
+		_csr->orderedCsrE[15] = 34
+	newID 4, oldID 8, compID 0: 	newCsrE_Offset_count = 20
+		_csr->orderedCsrE[16] = 4
+		_csr->orderedCsrE[17] = 2
+		_csr->orderedCsrE[18] = 3
+		_csr->orderedCsrE[19] = 35
+	newID 5, oldID 31, compID 0: 	newCsrE_Offset_count = 24
+		_csr->orderedCsrE[20] = 9
+		_csr->orderedCsrE[21] = 2
+		_csr->orderedCsrE[22] = 33
+		_csr->orderedCsrE[23] = 34
+	newID 6, oldID 14, compID 0: 	newCsrE_Offset_count = 29
+		_csr->orderedCsrE[24] = 4
+		_csr->orderedCsrE[25] = 2
+		_csr->orderedCsrE[26] = 3
+		_csr->orderedCsrE[27] = 35
+		_csr->orderedCsrE[28] = 34
+	newID 7, oldID 4, compID 0: 	newCsrE_Offset_count = 35
+		_csr->orderedCsrE[29] = 13
+		_csr->orderedCsrE[30] = 8
+		_csr->orderedCsrE[31] = 14
+		_csr->orderedCsrE[32] = 2
+		_csr->orderedCsrE[33] = 3
+		_csr->orderedCsrE[34] = 35
+	newID 8, oldID 3, compID 0: 	newCsrE_Offset_count = 45
+		_csr->orderedCsrE[35] = 10
+		_csr->orderedCsrE[36] = 29
+		_csr->orderedCsrE[37] = 28
+		_csr->orderedCsrE[38] = 8
+		_csr->orderedCsrE[39] = 14
+		_csr->orderedCsrE[40] = 9
+		_csr->orderedCsrE[41] = 4
+		_csr->orderedCsrE[42] = 2
+		_csr->orderedCsrE[43] = 33
+		_csr->orderedCsrE[44] = 35
+	newID 9, oldID 35, compID 0: 	newCsrE_Offset_count = 56
+		_csr->orderedCsrE[45] = 13
+		_csr->orderedCsrE[46] = 18
+		_csr->orderedCsrE[47] = 22
+		_csr->orderedCsrE[48] = 20
+		_csr->orderedCsrE[49] = 8
+		_csr->orderedCsrE[50] = 14
+		_csr->orderedCsrE[51] = 9
+		_csr->orderedCsrE[52] = 4
+		_csr->orderedCsrE[53] = 32
+		_csr->orderedCsrE[54] = 2
+		_csr->orderedCsrE[55] = 3
+	newID 10, oldID 34, compID 0: 	newCsrE_Offset_count = 73
+		_csr->orderedCsrE[56] = 10
+		_csr->orderedCsrE[57] = 15
+		_csr->orderedCsrE[58] = 16
+		_csr->orderedCsrE[59] = 19
+		_csr->orderedCsrE[60] = 27
+		_csr->orderedCsrE[61] = 21
+		_csr->orderedCsrE[62] = 23
+		_csr->orderedCsrE[63] = 29
+		_csr->orderedCsrE[64] = 20
+		_csr->orderedCsrE[65] = 31
+		_csr->orderedCsrE[66] = 30
+		_csr->orderedCsrE[67] = 28
+		_csr->orderedCsrE[68] = 24
+		_csr->orderedCsrE[69] = 14
+		_csr->orderedCsrE[70] = 9
+		_csr->orderedCsrE[71] = 32
+		_csr->orderedCsrE[72] = 33
+	newID 11, oldID 9, compID 0: 	newCsrE_Offset_count = 78
+		_csr->orderedCsrE[73] = 31
+		_csr->orderedCsrE[74] = 3
+		_csr->orderedCsrE[75] = 33
+		_csr->orderedCsrE[76] = 35
+		_csr->orderedCsrE[77] = 34
+	newID 12, oldID 33, compID 0: 	newCsrE_Offset_count = 90
+		_csr->orderedCsrE[78] = 15
+		_csr->orderedCsrE[79] = 16
+		_csr->orderedCsrE[80] = 19
+		_csr->orderedCsrE[81] = 21
+		_csr->orderedCsrE[82] = 23
+		_csr->orderedCsrE[83] = 31
+		_csr->orderedCsrE[84] = 30
+		_csr->orderedCsrE[85] = 24
+		_csr->orderedCsrE[86] = 9
+		_csr->orderedCsrE[87] = 32
+		_csr->orderedCsrE[88] = 3
+		_csr->orderedCsrE[89] = 34
+	newID 13, oldID 13, compID 0: 	newCsrE_Offset_count = 92
+		_csr->orderedCsrE[90] = 4
+		_csr->orderedCsrE[91] = 35
+	newID 14, oldID 10, compID 0: 	newCsrE_Offset_count = 94
+		_csr->orderedCsrE[92] = 3
+		_csr->orderedCsrE[93] = 34
+	newID 15, oldID 29, compID 0: 	newCsrE_Offset_count = 97
+		_csr->orderedCsrE[94] = 32
+		_csr->orderedCsrE[95] = 3
+		_csr->orderedCsrE[96] = 34
+	newID 16, oldID 28, compID 0: 	newCsrE_Offset_count = 101
+		_csr->orderedCsrE[97] = 25
+		_csr->orderedCsrE[98] = 24
+		_csr->orderedCsrE[99] = 3
+		_csr->orderedCsrE[100] = 34
+	newID 17, oldID 32, compID 0: 	newCsrE_Offset_count = 107
+		_csr->orderedCsrE[101] = 25
+		_csr->orderedCsrE[102] = 26
+		_csr->orderedCsrE[103] = 29
+		_csr->orderedCsrE[104] = 33
+		_csr->orderedCsrE[105] = 35
+		_csr->orderedCsrE[106] = 34
+	newID 18, oldID 15, compID 0: 	newCsrE_Offset_count = 109
+		_csr->orderedCsrE[107] = 33
+		_csr->orderedCsrE[108] = 34
+	newID 19, oldID 16, compID 0: 	newCsrE_Offset_count = 111
+		_csr->orderedCsrE[109] = 33
+		_csr->orderedCsrE[110] = 34
+	newID 20, oldID 19, compID 0: 	newCsrE_Offset_count = 113
+		_csr->orderedCsrE[111] = 33
+		_csr->orderedCsrE[112] = 34
+	newID 21, oldID 27, compID 0: 	newCsrE_Offset_count = 115
+		_csr->orderedCsrE[113] = 30
+		_csr->orderedCsrE[114] = 34
+	newID 22, oldID 21, compID 0: 	newCsrE_Offset_count = 117
+		_csr->orderedCsrE[115] = 33
+		_csr->orderedCsrE[116] = 34
+	newID 23, oldID 23, compID 0: 	newCsrE_Offset_count = 119
+		_csr->orderedCsrE[117] = 33
+		_csr->orderedCsrE[118] = 34
+	newID 24, oldID 30, compID 0: 	newCsrE_Offset_count = 123
+		_csr->orderedCsrE[119] = 27
+		_csr->orderedCsrE[120] = 24
+		_csr->orderedCsrE[121] = 33
+		_csr->orderedCsrE[122] = 34
+	newID 25, oldID 24, compID 0: 	newCsrE_Offset_count = 128
+		_csr->orderedCsrE[123] = 26
+		_csr->orderedCsrE[124] = 28
+		_csr->orderedCsrE[125] = 30
+		_csr->orderedCsrE[126] = 33
+		_csr->orderedCsrE[127] = 34
+	newID 26, oldID 25, compID 0: 	newCsrE_Offset_count = 131
+		_csr->orderedCsrE[128] = 26
+		_csr->orderedCsrE[129] = 28
+		_csr->orderedCsrE[130] = 32
+	newID 27, oldID 26, compID 0: 	newCsrE_Offset_count = 134
+		_csr->orderedCsrE[131] = 25
+		_csr->orderedCsrE[132] = 24
+		_csr->orderedCsrE[133] = 32
+[Pass 3] checked
+[Pass 4] checked
+comp_offset[1] = 28, compID[28] = 1
+	newID 28, oldID 5, compID 1: 
+		_csr->orderedCsrE[134] = 11
+		_csr->orderedCsrE[135] = 7
+		_csr->orderedCsrE[136] = 36
+		newCsrE_Offset_count = 137
+	newID 29, oldID 11, compID 1: 	newCsrE_Offset_count = 140
+		_csr->orderedCsrE[137] = 5
+		_csr->orderedCsrE[138] = 6
+		_csr->orderedCsrE[139] = 36
+	newID 30, oldID 7, compID 1: 	newCsrE_Offset_count = 144
+		_csr->orderedCsrE[140] = 17
+		_csr->orderedCsrE[141] = 5
+		_csr->orderedCsrE[142] = 6
+		_csr->orderedCsrE[143] = 36
+	newID 31, oldID 36, compID 1: 	newCsrE_Offset_count = 148
+		_csr->orderedCsrE[144] = 7
+		_csr->orderedCsrE[145] = 5
+		_csr->orderedCsrE[146] = 11
+		_csr->orderedCsrE[147] = 6
+	newID 32, oldID 6, compID 1: 	newCsrE_Offset_count = 152
+		_csr->orderedCsrE[148] = 17
+		_csr->orderedCsrE[149] = 11
+		_csr->orderedCsrE[150] = 7
+		_csr->orderedCsrE[151] = 36
+	newID 33, oldID 17, compID 1: 	newCsrE_Offset_count = 154
+		_csr->orderedCsrE[152] = 6
+		_csr->orderedCsrE[153] = 7
+[Pass 6] checked
+[Pass 7] checked
+[Pass 8] checked
+[Pass 9] checked
+[Pass 10] checked
+[Pass 11] checked
+[Pass 12] D1
+[Pass 13] checked
+[Pass 14] checked
+[Pass 15] checked
+[Pass 16] checked
+[Pass 17] checked
+[Pass 18] checked
+[Pass 19] checked
+[Pass 20] checked
+[Pass 21] checked
+[Pass 22] checked
+[Pass 23] checked
+[Pass 24] checked
+[Pass 25] checked
+[Pass 26] checked
+[Pass 27] checked
+[Pass 28] checked
+[Pass 29] checked
+[Pass 30] checked
+[Pass 31] checked
+[Pass 32] checked
+[Pass 33] checked
+[Pass 34] checked
+[Pass 35] checked
+[Pass 36] checked
+
+Tail orderedCsrV[34] = 154
+
+Tail comp_newCsrOffset[2] = 34
+csrE_Iter = 0, oldID 22 => newID 1
+csrE_Iter = 1, oldID 18 => newID 2
+csrE_Iter = 2, oldID 20 => newID 3
+csrE_Iter = 3, oldID 8 => newID 4
+csrE_Iter = 4, oldID 31 => newID 5
+csrE_Iter = 5, oldID 14 => newID 6
+csrE_Iter = 6, oldID 4 => newID 7
+csrE_Iter = 7, oldID 3 => newID 8
+csrE_Iter = 8, oldID 35 => newID 9
+csrE_Iter = 9, oldID 2 => newID 0
+csrE_Iter = 10, oldID 35 => newID 9
+csrE_Iter = 11, oldID 2 => newID 0
+csrE_Iter = 12, oldID 35 => newID 9
+csrE_Iter = 13, oldID 2 => newID 0
+csrE_Iter = 14, oldID 35 => newID 9
+csrE_Iter = 15, oldID 34 => newID 10
+csrE_Iter = 16, oldID 4 => newID 7
+csrE_Iter = 17, oldID 2 => newID 0
+csrE_Iter = 18, oldID 3 => newID 8
+csrE_Iter = 19, oldID 35 => newID 9
+csrE_Iter = 20, oldID 9 => newID 11
+csrE_Iter = 21, oldID 2 => newID 0
+csrE_Iter = 22, oldID 33 => newID 12
+csrE_Iter = 23, oldID 34 => newID 10
+csrE_Iter = 24, oldID 4 => newID 7
+csrE_Iter = 25, oldID 2 => newID 0
+csrE_Iter = 26, oldID 3 => newID 8
+csrE_Iter = 27, oldID 35 => newID 9
+csrE_Iter = 28, oldID 34 => newID 10
+csrE_Iter = 29, oldID 13 => newID 13
+csrE_Iter = 30, oldID 8 => newID 4
+csrE_Iter = 31, oldID 14 => newID 6
+csrE_Iter = 32, oldID 2 => newID 0
+csrE_Iter = 33, oldID 3 => newID 8
+csrE_Iter = 34, oldID 35 => newID 9
+csrE_Iter = 35, oldID 10 => newID 14
+csrE_Iter = 36, oldID 29 => newID 15
+csrE_Iter = 37, oldID 28 => newID 16
+csrE_Iter = 38, oldID 8 => newID 4
+csrE_Iter = 39, oldID 14 => newID 6
+csrE_Iter = 40, oldID 9 => newID 11
+csrE_Iter = 41, oldID 4 => newID 7
+csrE_Iter = 42, oldID 2 => newID 0
+csrE_Iter = 43, oldID 33 => newID 12
+csrE_Iter = 44, oldID 35 => newID 9
+csrE_Iter = 45, oldID 13 => newID 13
+csrE_Iter = 46, oldID 18 => newID 2
+csrE_Iter = 47, oldID 22 => newID 1
+csrE_Iter = 48, oldID 20 => newID 3
+csrE_Iter = 49, oldID 8 => newID 4
+csrE_Iter = 50, oldID 14 => newID 6
+csrE_Iter = 51, oldID 9 => newID 11
+csrE_Iter = 52, oldID 4 => newID 7
+csrE_Iter = 53, oldID 32 => newID 17
+csrE_Iter = 54, oldID 2 => newID 0
+csrE_Iter = 55, oldID 3 => newID 8
+csrE_Iter = 56, oldID 10 => newID 14
+csrE_Iter = 57, oldID 15 => newID 18
+csrE_Iter = 58, oldID 16 => newID 19
+csrE_Iter = 59, oldID 19 => newID 20
+csrE_Iter = 60, oldID 27 => newID 21
+csrE_Iter = 61, oldID 21 => newID 22
+csrE_Iter = 62, oldID 23 => newID 23
+csrE_Iter = 63, oldID 29 => newID 15
+csrE_Iter = 64, oldID 20 => newID 3
+csrE_Iter = 65, oldID 31 => newID 5
+csrE_Iter = 66, oldID 30 => newID 24
+csrE_Iter = 67, oldID 28 => newID 16
+csrE_Iter = 68, oldID 24 => newID 25
+csrE_Iter = 69, oldID 14 => newID 6
+csrE_Iter = 70, oldID 9 => newID 11
+csrE_Iter = 71, oldID 32 => newID 17
+csrE_Iter = 72, oldID 33 => newID 12
+csrE_Iter = 73, oldID 31 => newID 5
+csrE_Iter = 74, oldID 3 => newID 8
+csrE_Iter = 75, oldID 33 => newID 12
+csrE_Iter = 76, oldID 35 => newID 9
+csrE_Iter = 77, oldID 34 => newID 10
+csrE_Iter = 78, oldID 15 => newID 18
+csrE_Iter = 79, oldID 16 => newID 19
+csrE_Iter = 80, oldID 19 => newID 20
+csrE_Iter = 81, oldID 21 => newID 22
+csrE_Iter = 82, oldID 23 => newID 23
+csrE_Iter = 83, oldID 31 => newID 5
+csrE_Iter = 84, oldID 30 => newID 24
+csrE_Iter = 85, oldID 24 => newID 25
+csrE_Iter = 86, oldID 9 => newID 11
+csrE_Iter = 87, oldID 32 => newID 17
+csrE_Iter = 88, oldID 3 => newID 8
+csrE_Iter = 89, oldID 34 => newID 10
+csrE_Iter = 90, oldID 4 => newID 7
+csrE_Iter = 91, oldID 35 => newID 9
+csrE_Iter = 92, oldID 3 => newID 8
+csrE_Iter = 93, oldID 34 => newID 10
+csrE_Iter = 94, oldID 32 => newID 17
+csrE_Iter = 95, oldID 3 => newID 8
+csrE_Iter = 96, oldID 34 => newID 10
+csrE_Iter = 97, oldID 25 => newID 26
+csrE_Iter = 98, oldID 24 => newID 25
+csrE_Iter = 99, oldID 3 => newID 8
+csrE_Iter = 100, oldID 34 => newID 10
+csrE_Iter = 101, oldID 25 => newID 26
+csrE_Iter = 102, oldID 26 => newID 27
+csrE_Iter = 103, oldID 29 => newID 15
+csrE_Iter = 104, oldID 33 => newID 12
+csrE_Iter = 105, oldID 35 => newID 9
+csrE_Iter = 106, oldID 34 => newID 10
+csrE_Iter = 107, oldID 33 => newID 12
+csrE_Iter = 108, oldID 34 => newID 10
+csrE_Iter = 109, oldID 33 => newID 12
+csrE_Iter = 110, oldID 34 => newID 10
+csrE_Iter = 111, oldID 33 => newID 12
+csrE_Iter = 112, oldID 34 => newID 10
+csrE_Iter = 113, oldID 30 => newID 24
+csrE_Iter = 114, oldID 34 => newID 10
+csrE_Iter = 115, oldID 33 => newID 12
+csrE_Iter = 116, oldID 34 => newID 10
+csrE_Iter = 117, oldID 33 => newID 12
+csrE_Iter = 118, oldID 34 => newID 10
+csrE_Iter = 119, oldID 27 => newID 21
+csrE_Iter = 120, oldID 24 => newID 25
+csrE_Iter = 121, oldID 33 => newID 12
+csrE_Iter = 122, oldID 34 => newID 10
+csrE_Iter = 123, oldID 26 => newID 27
+csrE_Iter = 124, oldID 28 => newID 16
+csrE_Iter = 125, oldID 30 => newID 24
+csrE_Iter = 126, oldID 33 => newID 12
+csrE_Iter = 127, oldID 34 => newID 10
+csrE_Iter = 128, oldID 26 => newID 27
+csrE_Iter = 129, oldID 28 => newID 16
+csrE_Iter = 130, oldID 32 => newID 17
+csrE_Iter = 131, oldID 25 => newID 26
+csrE_Iter = 132, oldID 24 => newID 25
+csrE_Iter = 133, oldID 32 => newID 17
+csrE_Iter = 134, oldID 11 => newID 29
+csrE_Iter = 135, oldID 7 => newID 30
+csrE_Iter = 136, oldID 36 => newID 31
+csrE_Iter = 137, oldID 5 => newID 28
+csrE_Iter = 138, oldID 6 => newID 32
+csrE_Iter = 139, oldID 36 => newID 31
+csrE_Iter = 140, oldID 17 => newID 33
+csrE_Iter = 141, oldID 5 => newID 28
+csrE_Iter = 142, oldID 6 => newID 32
+csrE_Iter = 143, oldID 36 => newID 31
+csrE_Iter = 144, oldID 7 => newID 30
+csrE_Iter = 145, oldID 5 => newID 28
+csrE_Iter = 146, oldID 11 => newID 29
+csrE_Iter = 147, oldID 6 => newID 32
+csrE_Iter = 148, oldID 17 => newID 33
+csrE_Iter = 149, oldID 11 => newID 29
+csrE_Iter = 150, oldID 7 => newID 30
+csrE_Iter = 151, oldID 36 => newID 31
+csrE_Iter = 152, oldID 6 => newID 32
+csrE_Iter = 153, oldID 7 => newID 30
+newID = 0, oldID = 2, ff = 0.000000, w = 1.000000, type = 1
+newID = 1, oldID = 22, ff = 0.000000, w = 1.000000, type = 1
+newID = 2, oldID = 18, ff = 0.000000, w = 1.000000, type = 1
+newID = 3, oldID = 20, ff = 0.000000, w = 1.000000, type = 1
+newID = 4, oldID = 8, ff = 0.000000, w = 1.000000, type = 1
+newID = 5, oldID = 31, ff = 0.000000, w = 1.000000, type = 1
+newID = 6, oldID = 14, ff = 0.000000, w = 1.000000, type = 1
+newID = 7, oldID = 4, ff = 0.000000, w = 1.000000, type = 1
+newID = 8, oldID = 3, ff = 0.000000, w = 1.000000, type = 1
+newID = 9, oldID = 35, ff = 7.000000, w = 7.000000, type = 10
+newID = 10, oldID = 34, ff = 0.000000, w = 1.000000, type = 1
+newID = 11, oldID = 9, ff = 0.000000, w = 1.000000, type = 1
+newID = 12, oldID = 33, ff = 0.000000, w = 1.000000, type = 1
+newID = 13, oldID = 13, ff = 0.000000, w = 1.000000, type = 1
+newID = 14, oldID = 10, ff = 0.000000, w = 1.000000, type = 1
+newID = 15, oldID = 29, ff = 0.000000, w = 1.000000, type = 1
+newID = 16, oldID = 28, ff = 0.000000, w = 1.000000, type = 1
+newID = 17, oldID = 32, ff = 0.000000, w = 1.000000, type = 1
+newID = 18, oldID = 15, ff = 0.000000, w = 1.000000, type = 1
+newID = 19, oldID = 16, ff = 0.000000, w = 1.000000, type = 1
+newID = 20, oldID = 19, ff = 0.000000, w = 1.000000, type = 1
+newID = 21, oldID = 27, ff = 0.000000, w = 1.000000, type = 1
+newID = 22, oldID = 21, ff = 0.000000, w = 1.000000, type = 1
+newID = 23, oldID = 23, ff = 0.000000, w = 1.000000, type = 1
+newID = 24, oldID = 30, ff = 0.000000, w = 1.000000, type = 1
+newID = 25, oldID = 24, ff = 0.000000, w = 1.000000, type = 1
+newID = 26, oldID = 25, ff = 0.000000, w = 1.000000, type = 1
+newID = 27, oldID = 26, ff = 0.000000, w = 1.000000, type = 1
+newID = 28, oldID = 5, ff = 0.000000, w = 1.000000, type = 1
+newID = 29, oldID = 11, ff = 0.000000, w = 1.000000, type = 1
+newID = 30, oldID = 7, ff = 0.000000, w = 1.000000, type = 1
+newID = 31, oldID = 36, ff = 52.000000, w = 29.000000, type = 10
+newID = 32, oldID = 6, ff = 0.000000, w = 1.000000, type = 1
+newID = 33, oldID = 17, ff = 0.000000, w = 1.000000, type = 1
+CC[2] = 68
+CC[22] = 88
+CC[18] = 88
+CC[20] = 66
+CC[8] = 75
+CC[31] = 72
+CC[14] = 64
+CC[4] = 71
+CC[3] = 59
+newID 9, oldID 35, type 10
+CC[34] = 60
+CC[9] = 64
+CC[33] = 64
+CC[13] = 89
+CC[10] = 76
+CC[29] = 73
+CC[28] = 72
+CC[32] = 61
+CC[15] = 89
+CC[16] = 89
+CC[19] = 89
+CC[27] = 91
+CC[21] = 89
+CC[23] = 89
+CC[30] = 86
+CC[24] = 84
+CC[25] = 88
+CC[26] = 88
+CC[5] = 87
+CC[11] = 87
+CC[7] = 86
+newID 31, oldID 36, type 10
+CC[6] = 86
+CC[17] = 116
